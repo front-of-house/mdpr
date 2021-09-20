@@ -1,6 +1,6 @@
 {
   "name": "mdpr",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Markdown previewer, Github style.",
   "main": "index.js",
   "bin": {
