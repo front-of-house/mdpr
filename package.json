@@ -1,0 +1,33 @@
+{
+  "name": "mdpr",
+  "version": "0.0.0",
+  "description": "Markdown previewer, Github style.",
+  "main": "index.js",
+  "bin": {
+    "mdpr": "bin.js"
+  },
+  "scripts": {
+    "build": "esbuild --bundle --minify --sourcemap=inline --platform=node --target=node12 --outfile=bin.js --external:pocket.io index.js",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "author": "estrattonbailey",
+  "license": "MIT",
+  "dependencies": {
+    "filewatcher": "^3.0.1",
+    "get-port": "^5.1.1",
+    "micromark": "^3.0.5",
+    "micromark-extension-gfm": "^1.0.0",
+    "pocket.io": "^0.1.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@semantic-release/git": "^9.0.1",
+    "esbuild": "^0.12.28",
+    "husky": "^7.0.2",
+    "is-ci": "^3.0.0",
+    "prettier": "^2.4.1",
+    "semantic-release": "^18.0.0"
+  }
+}
